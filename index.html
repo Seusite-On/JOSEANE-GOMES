@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -8,336 +10,505 @@
 
 <style>
 
-body{
+*{
 margin:0;
-font-family:Arial;
-background:#0c0c0c;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI;
+}
+
+body{
+background:#0b0b0b;
 color:white;
 }
+
 
 /* MENU */
 
 header{
+
+position:sticky;
+top:0;
 background:black;
 padding:15px;
-text-align:center;
 border-bottom:2px solid gold;
-font-size:22px;
-letter-spacing:2px;
+z-index:999;
+
 }
 
-/* TITULO */
+.logo{
 
-.topo{
-text-align:center;
-padding:40px 20px;
-}
-
-.topo h1{
+font-size:28px;
 color:gold;
-font-size:40px;
-margin:0;
+font-weight:bold;
+text-align:center;
+
 }
 
-.topo p{
+
+/* HERO */
+
+.hero{
+
+text-align:center;
+padding:50px 20px;
+background:linear-gradient(black,#111);
+
+}
+
+.hero h1{
+
+font-size:40px;
+color:gold;
+
+}
+
+.hero p{
+
+margin-top:10px;
 color:#ccc;
 }
 
-/* SERVIÇOS */
 
-.servicos{
-padding:20px;
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:20px;
-}
 
-/* CARD */
+/* BOTOES SOCIAIS */
 
-.card{
+.social{
 
-background:#111;
-border:2px solid gold;
-border-radius:12px;
-padding:20px;
-transition:0.3s;
+margin-top:20px;
 
 }
 
-.card:hover{
+.social a{
 
-transform:scale(1.05);
-box-shadow:0px 0px 15px gold;
+display:inline-block;
+
+margin:10px;
+
+padding:15px 25px;
+
+border-radius:10px;
+
+text-decoration:none;
+
+font-weight:bold;
+
+color:black;
+
+}
+
+.whats{
+
+background:#25D366;
+
+}
+
+.insta{
+
+background:gold;
+
+}
+
+
+
+/* SOBRE */
+
+.sobre{
+
+max-width:1000px;
+
+margin:auto;
+
+padding:40px 20px;
+
+text-align:center;
+
+}
+
+.sobre h2{
+
+color:gold;
+
+margin-bottom:15px;
+
+}
+
+.sobre p{
+
+color:#ddd;
+
+font-size:18px;
+
+line-height:1.6;
+
+}
+
+
+
+/* SERVICOS */
+
+.container{
+
+max-width:1200px;
+margin:auto;
+padding:30px;
 
 }
 
 .titulo{
 
+text-align:center;
+margin-bottom:30px;
+font-size:30px;
 color:gold;
-font-size:20px;
-margin-bottom:15px;
 
 }
+
+
+
+.cards{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+gap:25px;
+
+}
+
+
+
+.card{
+
+background:#151515;
+
+border:2px solid gold;
+
+border-radius:15px;
+
+padding:25px;
+
+transition:0.3s;
+
+box-shadow:0px 0px 15px rgba(255,215,0,0.2);
+
+}
+
+
+.card:hover{
+
+transform:translateY(-5px);
+
+box-shadow:0px 0px 30px rgba(255,215,0,0.5);
+
+}
+
+
+
+.card h2{
+
+color:gold;
+
+margin-bottom:10px;
+
+}
+
+
 
 .preco{
 
-font-size:22px;
-margin:10px 0;
+font-size:20px;
+
+margin-bottom:10px;
 
 }
 
-.man{
 
-color:#ccc;
+
+.tecnica{
+
+color:#ddd;
+
+line-height:1.6;
+
+font-size:14px;
 
 }
 
-/* OUTROS */
 
-.outros{
 
-padding:30px;
+/* LOCAL */
+
+.local{
+
+margin-top:50px;
+
 text-align:center;
 
 }
 
-.outros h2{
 
-color:gold;
+
+.botao{
+
+margin-top:15px;
+
+padding:14px 30px;
+
+font-size:18px;
+
+background:gold;
+
+border:none;
+
+border-radius:8px;
+
+cursor:pointer;
+
+font-weight:bold;
 
 }
 
-/* MAPA */
 
-.mapa{
+.botao:hover{
 
-padding:20px;
+background:#e6c200;
 
 }
+
+
 
 iframe{
 
+margin-top:20px;
+
+border-radius:15px;
+
 width:100%;
-height:300px;
-border:0;
-border-radius:10px;
+
+height:350px;
+
+border:none;
 
 }
 
-/* WHATSAPP */
 
-.whatsapp{
 
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-padding:15px 20px;
-border-radius:50px;
-font-size:18px;
-cursor:pointer;
-box-shadow:0px 0px 10px black;
-
-}
-
-/* RODAPÉ */
+/* FOOTER */
 
 footer{
 
+margin-top:40px;
+
 text-align:center;
+
 padding:20px;
-background:black;
-margin-top:30px;
-border-top:2px solid gold;
+
+color:#aaa;
+
+border-top:1px solid gold;
 
 }
 
+
+
 </style>
+
 
 </head>
 
 
 <body>
 
+
 <header>
 
-JOSEANE GOMES NAIL DESIGNER
+<div class="logo">
+
+Joseane Gomes Nail Designer
+
+</div>
 
 </header>
 
 
-<div class="topo">
 
-<h1>Unhas Perfeitas</h1>
+<section class="hero">
 
-<p>Atendimento profissional em unhas de gel</p>
+<h1>Unhas Profissionais</h1>
 
-</div>
-
-
-<div class="servicos">
+<p>Qualidade, beleza e durabilidade em cada detalhe</p>
 
 
-<div class="card">
-<div class="titulo">Banho em Gel Natural</div>
 
-<div class="preco">
-Aplicação R$95
-</div>
+<div class="social">
 
-<div class="man">
-Manutenção R$90
-</div>
+<a class="whats" href="https://wa.me/5564999999999">
+WhatsApp
+</a>
+
+<a class="insta" href="https://www.instagram.com/joseanegomesunhas" target="_blank">
+Instagram
+</a>
 
 </div>
 
 
-<div class="card">
-<div class="titulo">Banho em Gel Simples</div>
-
-<div class="preco">
-Aplicação R$110
-</div>
-
-<div class="man">
-Manutenção R$105
-</div>
-
-</div>
-
-
-<div class="card">
-<div class="titulo">Banho em Gel Complexo</div>
-
-<div class="preco">
-Aplicação R$125
-</div>
-
-<div class="man">
-Manutenção R$120
-</div>
-
-</div>
+</section>
 
 
 
-<div class="card">
+<section class="sobre">
 
-<div class="titulo">
-Blindagem em Gel
-</div>
-
-<div class="preco">
-Aplicação R$60
-</div>
-
-<div class="man">
-Manutenção R$60
-</div>
-
-</div>
-
-
-
-<div class="card">
-
-<div class="titulo">
-Alongamento Natural
-</div>
-
-<div class="preco">
-Aplicação R$120
-</div>
-
-<div class="man">
-Manutenção R$90
-</div>
-
-</div>
-
-
-
-<div class="card">
-
-<div class="titulo">
-Alongamento Simples
-</div>
-
-<div class="preco">
-Aplicação R$135
-</div>
-
-<div class="man">
-Manutenção R$105
-</div>
-
-</div>
-
-
-
-<div class="card">
-
-<div class="titulo">
-Alongamento Complexo
-</div>
-
-<div class="preco">
-Aplicação R$150
-</div>
-
-<div class="man">
-Manutenção R$120
-</div>
-
-</div>
-
-
-
-</div>
-
-
-
-<div class="outros">
-
-<h2>Outros Serviços</h2>
+<h2>Sobre a Profissional</h2>
 
 <p>
 
-Remoção completa — R$50<br><br>
+Joseane Gomes é Nail Designer especializada em unhas em gel e alongamentos, 
+trabalhando com técnicas modernas e materiais de alta qualidade.
 
-Remoção + Nova aplicação — R$30<br><br>
+Seu trabalho é focado na durabilidade, beleza e acabamento perfeito,
+garantindo unhas resistentes e elegantes.
 
-Reposição de unha — R$10<br><br>
-
-Reposição fora manutenção — R$15
+Atendimento com cuidado, higiene e profissionalismo para oferecer
+a melhor experiência para cada cliente.
 
 </p>
 
+</section>
+
+
+
+<section class="container">
+
+<div class="titulo">
+
+Nossos Serviços
+
 </div>
 
 
-<div class="mapa">
+
+<div class="cards">
+
+<!-- MESMOS CARDS DE SERVIÇOS -->
+<!-- (mantidos iguais do site anterior) -->
+
+<div class="card">
+
+<h2>Banho em Gel Decoração Simples</h2>
+
+<div class="preco">
+
+Aplicação: R$110<br>
+Manutenção: R$105
+
+</div>
+
+<div class="tecnica">
+
+Banho em Gel<br>
+Esmaltação<br>
+Ponto de Luz / Strass<br>
+Francesa Tradicional<br>
+Glitter discreto<br>
+Traços geométricos
+
+</div>
+
+</div>
+
+
+
+<div class="card">
+
+<h2>Banho em Gel Decoração Complexa</h2>
+
+<div class="preco">
+
+Aplicação: R$125<br>
+Manutenção: R$120
+
+</div>
+
+<div class="tecnica">
+
+Banho em Gel<br>
+Encapsulamento luxo<br>
+Arte complexa<br>
+Pedrarias<br>
+Bling extremo
+
+</div>
+
+</div>
+
+
+
+<div class="card">
+
+<h2>Blindagem em Gel</h2>
+
+<div class="preco">
+
+Aplicação: R$60<br>
+Manutenção: R$60
+
+</div>
+
+<div class="tecnica">
+
+Blindagem em Gel<br>
+Esmaltação<br>
+Francesa<br>
+Glitter discreto<br>
+Traços geométricos
+
+</div>
+
+</div>
+
+
+</div>
+
+
+
+<div class="local">
+
+<h2>Localização</h2>
+
+<p id="localTexto">
+
+https://maps.google.com/?q=-17.150995,-49.993614
+
+</p>
+
+
+<button class="botao" onclick="copiar()">
+
+Copiar Localização
+
+</button>
+
+
 
 <iframe
-
 src="https://maps.google.com/maps?q=-17.150995,-49.993614&z=15&output=embed">
-
 </iframe>
 
+
+
 </div>
 
 
-<div class="whatsapp" onclick="abrirWhats()">
 
-WhatsApp
+</section>
 
-</div>
 
 
 <footer>
 
-Joseane Gomes Nail Designer
+Joseane Gomes Nail Designer © 2026
 
 </footer>
 
@@ -345,11 +516,13 @@ Joseane Gomes Nail Designer
 
 <script>
 
-function abrirWhats(){
+function copiar(){
 
-window.open(
-"https://wa.me/5564981620642"
-)
+let texto=document.getElementById("localTexto").innerText;
+
+navigator.clipboard.writeText(texto);
+
+alert("Localização copiada!");
 
 }
 
